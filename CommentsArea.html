@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="CommentsArea.css" />
+</head>
+<body>
+    <div id="input-field">
+        <label for="UserName">UserName</label>
+        <input type="text" id="UserName" name="UserName"><br>
+        <label for="CommentContent">Comment Content</label>
+        <textarea id="CommentContent" name="CommentContent" rows="4" columns="50"></textarea><br>
+        <input id="submit" type="submit" value="Submit">
+    </div>
+    <div class="comment">
+        <span class="show-UserName">Username1</span>
+        <p class="show-CommentContent">Comment Content1</p>
+        <button class="delete-button" type="button">删除</button>
+    </div>
+    <div class="comment">
+        <span class="show-UserName">Username2</span>
+        <p class="show-CommentContent">Comment Content2</p>
+        <button class="delete-button" type="button">删除</button>
+    </div>
+    <div class="change-page">
+        <button class="prev-page">上一页</button>
+        <button class="next-page">下一页</button>
+    </div>
+    
+    <script src="CommentsArea.js">
+
+    </script>
+</body>
+</html>
