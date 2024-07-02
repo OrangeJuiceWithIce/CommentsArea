@@ -65,12 +65,12 @@ label{
     margin:0 auto;
 }
 
-.prev-page{
+#prev-page{
     position:absolute;
     left:10px;
 }
 
-.next-page{
+#next-page{
     position:absolute;
     right:10px;
 }

@@ -8,29 +8,35 @@
 </head>
 <body>
     <div id="input-field">
+        <form id="NewComment">
         <label for="UserName">UserName</label>
-        <input type="text" id="UserName" name="UserName"><br>
+        <input type="text" id="UserName" name="name"><br>
         <label for="CommentContent">Comment Content</label>
-        <textarea id="CommentContent" name="CommentContent" rows="4" columns="50"></textarea><br>
-        <input id="submit" type="submit" value="Submit">
+        <textarea id="CommentContent" name="content" rows="4" columns="50"></textarea><br>
+        <input id="submit" type="submit" value="提交">
+        </form>
     </div>
-    <div class="comment">
-        <span class="show-UserName">Username1</span>
-        <p class="show-CommentContent">Comment Content1</p>
-        <button class="delete-button" type="button">删除</button>
+
+    <div id="show-field">
+        <div class="comment">
+            <span class="show-UserName">Username1</span>
+            <p class="show-CommentContent">Comment Content1</p>
+            <button class="delete-button" type="button">删除</button>
+        </div>
+        <div class="comment">
+            <span class="show-UserName">Username2</span>
+            <p class="show-CommentContent">Comment Content2</p>
+            <button class="delete-button" type="button">删除</button>
+        </div>
     </div>
-    <div class="comment">
-        <span class="show-UserName">Username2</span>
-        <p class="show-CommentContent">Comment Content2</p>
-        <button class="delete-button" type="button">删除</button>
-    </div>
+
     <div class="change-page">
-        <button class="prev-page">上一页</button>
-        <button class="next-page">下一页</button>
+        <button id="prev-page" type="button">上一页</button>
+        <button id="next-page" type="button">下一页</button>
     </div>
     
-    <script src="CommentsArea.js">
-
+    <script src="CommentsArea.js" defer>
+        
     </script>
 </body>
 </html>
